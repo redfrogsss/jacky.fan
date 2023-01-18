@@ -4,7 +4,7 @@ import RedStreamPreview from "../../public/img/redstream.png";
 import GDSCPreview from "../../public/img/gdsc.png";
 
 export const PortfolioPhotos = () => {
-    let projects = [
+    const projects = [
         {
             title: "SelfRemind",
             description:
