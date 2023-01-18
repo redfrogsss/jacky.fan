@@ -89,11 +89,38 @@ export default function HomePage() {
         );
     };
 
+    const NavBar = () => {
+        return (
+            <div className="navbar bg-base-100">
+                <div className="flex-1">
+                    <a className="btn btn-ghost normal-case text-xl" href="#intro">Jacky FAN's Website</a>
+                </div>
+                <div className="flex-none">
+                    <ul className="menu menu-horizontal px-1">
+                        <li>
+                            <a href="#intro">Intro</a>
+                        </li>
+                        <li>
+                            <a href="#projects">My Projects</a>
+                        </li>
+                        <li>
+                            <a href="#skills">My Skills</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        );
+    }
+    
+
     return (
         <div className="w-[99vw] bg-base-100">
             <div className="grid h-[100vh] bg-base-100 w-80%">
                 {/* Row 1: About me */}
-                <div className="flex items-center justify-center h-screen">
+                <header className="fixed w-full top-0 z-50">
+                    <NavBar />
+                </header>
+                <div id="intro" className="flex items-center justify-center h-screen">
                     <article className="prose lg:prose-xl">
                         <h1>Jacky FAN</h1>
                         <h4>A Computing Student at PolyU</h4>
@@ -176,7 +203,7 @@ export default function HomePage() {
                 </div>
             </div>
 
-            <div className="h-auto bg-base-200">
+            <div id="projects" className="h-auto bg-base-200">
                 {/* Row 2: My Works */}
                 <div className="flex items-center justify-center h-screen">
                     <div className="card w-[80%] h-auto bg-base-100 shadow-xl">
@@ -199,8 +226,8 @@ export default function HomePage() {
                 </div>
             </div>
 
-            <div className="h-auto bg-base-300">
-                {/* Row 2: My Works */}
+            <div id="skills" className="h-auto bg-base-300">
+                {/* Row 3: My Skills */}
                 <div className="flex items-center justify-center h-screen">
                     <div className="card w-[80%] h-auto bg-base-100 shadow-xl">
                         <div className="card-body">
@@ -208,9 +235,7 @@ export default function HomePage() {
                             <center>
                                 <article className="prose lg:prose-xl">
                                     <p>
-                                        In the past, I have done various
-                                        projects for school and hobbies. Most of
-                                        them are related to Web.
+                                        I learnt various skills in the past and I applied them in my projects.
                                     </p>
                                 </article>
                             </center>
