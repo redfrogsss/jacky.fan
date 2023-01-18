@@ -12,6 +12,7 @@ export default function HomePage() {
                     "A selfhosted To-do List Manager built with Next.js, Chakra-UI and MySQL.",
                 tags: ["Todo App", "Side Project"],
                 image: SelfRemindPreview,
+                link: "https://github.com/redfrogsss/selfremind"
             },
             {
                 title: "GDSC Portfolio",
@@ -19,6 +20,7 @@ export default function HomePage() {
                     "A portfolio website created for the GDSC portfolio workshop.",
                 tags: ["Web", "Workshop"],
                 image: GDSCPreview,
+                link: "https://github.com/redfrogsss/gdsc-portfolio"
             },
             {
                 title: "RedStream",
@@ -26,6 +28,7 @@ export default function HomePage() {
                     "A Movie Streaming Website built with ReactJS, MaterialUI, ExpressJS, Firebase and FFmpeg.",
                 tags: ["Movie Streaming", "School Project"],
                 image: RedStreamPreview,
+                link: "https://github.com/redfrogsss/RedStream"
             },
             {
                 title: "Student Attendance System",
@@ -33,6 +36,7 @@ export default function HomePage() {
                     "A Student Attendance Management System built with ExpressJS/Java, Bootstrap, JQuery and MySQL. ",
                 tags: ["Web", "School Project"],
                 image: AttendancePreview,
+                link: "https://github.com/redfrogsss/attendance-system-nodejs"
             },
         ];
 
@@ -47,7 +51,6 @@ export default function HomePage() {
                 return (
                     <>
                         <div className="carousel-item">
-                            {/* <img src={item} className="rounded-box" /> */}
                             <div className="card w-96 bg-base-100 shadow-xl">
                                 <figure>
                                     <img
@@ -58,7 +61,8 @@ export default function HomePage() {
                                 </figure>
                                 <div className="card-body">
                                     <h2 className="card-title">
-                                        {item.title}
+                                        <a href={item.link} className="link link-hover">{item.title}</a>
+                                        {/* {item.title} */}
                                         {i === 0 ? (
                                             <div className="badge badge-secondary">
                                                 {" "}
@@ -157,7 +161,6 @@ export default function HomePage() {
                             about `Web Technology`, `Self-Hosted Services` and
                             `Open Source Software`.
                         </p>
-                        <p></p>
                         <div className="">
                             <a
                                 className="btn btn-accent gap-2 mr-2"
@@ -226,10 +229,13 @@ export default function HomePage() {
                 </div>
             </div>
 
-            <div id="projects" className="h-auto bg-base-200">
-                {/* Row 2: My Works */}
-                <div className="flex items-center justify-center h-screen">
-                    <div className="card w-[80%] h-auto bg-base-100 shadow-xl">
+            <div className="h-auto bg-base-200">
+                <div className="grid justify-items-center items-center justify-center h-auto">
+                    {/*  My Projects */}
+                    <div
+                        id="projects"
+                        className="card w-[80%] h-auto bg-base-100 shadow-xl mt-16"
+                    >
                         <div className="card-body">
                             <center>
                                 <article className="prose lg:prose-xl">
@@ -246,13 +252,9 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div id="skills" className="h-auto bg-base-300">
-                {/* Row 3: My Skills */}
-                <div className="flex items-center justify-center h-screen">
-                    <div className="card w-[80%] h-auto bg-base-100 shadow-xl">
+                    
+                    {/* My Skills */}
+                    <div id="skills" className="card w-[80%] h-auto bg-base-100 shadow-xl my-16">
                         <div className="card-body">
                             <center>
                                 <article className="prose lg:prose-xl">
@@ -265,16 +267,22 @@ export default function HomePage() {
                             </center>
                             <div className="mt-4 grid grid-cols-2 gap-4">
                                 <div className="grid grid-rows-4 gap-2">
-                                    <SkillItem name="Typescript" percentage={80} />
-                                    <SkillItem name="JavaScript" percentage={80} />
-                                    <SkillItem name="CSS" percentage={70} />
+                                    <SkillItem
+                                        name="Typescript"
+                                        percentage={80}
+                                    />
                                     <SkillItem name="HTML" percentage={80} />
+                                    <SkillItem name="CSS" percentage={70} />
+                                    <SkillItem name="Cloud" percentage={40} />
                                 </div>
                                 <div className="grid grid-rows-4 gap-2">
+                                    <SkillItem
+                                        name="JavaScript"
+                                        percentage={80}
+                                    />
                                     <SkillItem name="MySQL" percentage={60} />
                                     <SkillItem name="Git" percentage={50} />
-                                    <SkillItem name="Cloud" percentage={30} />
-                                    <SkillItem name="CI/CD" percentage={20} />
+                                    <SkillItem name="CI/CD" percentage={30} />
                                 </div>
                             </div>
                         </div>
@@ -290,12 +298,19 @@ export default function HomePage() {
                         <small>
                             Jacky FAN @{" "}
                             <a href="https://jacky.fan">jacky.fan</a>{" "}
-                            {new Date().getFullYear()}. Source code available at
-                            Github.
+                            {new Date().getFullYear()}. Source code available at{" "}
+                            <a
+                                href="https://github.com/redfrogsss/jacky.fan"
+                                target="_blank"
+                            >
+                                GitHub
+                            </a>
+                            .
                         </small>
                     </article>
                 </div>
             </footer>
+
         </div>
     );
 }
