@@ -111,7 +111,27 @@ export default function HomePage() {
             </div>
         );
     }
+
+    interface SkillItemInterface {
+        name: string;
+        percentage: number;
+    }
     
+    const SkillItem = ({name = "", percentage = 0}:SkillItemInterface) => {
+        return (
+            <div className="w-[80%] justify-self-center">
+                <div className="grid grid-cols-2">
+                    <div className="text-left font-bold">{name}</div>
+                    <div className="text-right font-bold">{percentage}%</div>
+                </div>
+                <progress
+                    className="progress progress-primary"
+                    value={percentage}
+                    max="100"
+                ></progress>
+            </div>
+        );
+    }
 
     return (
         <div className="w-[99vw] bg-base-100">
@@ -120,7 +140,10 @@ export default function HomePage() {
                 <header className="fixed w-full top-0 z-50">
                     <NavBar />
                 </header>
-                <div id="intro" className="flex items-center justify-center h-screen">
+                <div
+                    id="intro"
+                    className="flex items-center justify-center h-screen"
+                >
                     <article className="prose lg:prose-xl">
                         <h1>Jacky FAN</h1>
                         <h4>A Computing Student at PolyU</h4>
@@ -208,9 +231,9 @@ export default function HomePage() {
                 <div className="flex items-center justify-center h-screen">
                     <div className="card w-[80%] h-auto bg-base-100 shadow-xl">
                         <div className="card-body">
-                            <h2 className="card-title">My Projects</h2>
                             <center>
                                 <article className="prose lg:prose-xl">
+                                    <h3>My Projects</h3>
                                     <p>
                                         In the past, I have done various
                                         projects for school and hobbies. Most of
@@ -231,42 +254,28 @@ export default function HomePage() {
                 <div className="flex items-center justify-center h-screen">
                     <div className="card w-[80%] h-auto bg-base-100 shadow-xl">
                         <div className="card-body">
-                            <h2 className="card-title">My Skills</h2>
                             <center>
                                 <article className="prose lg:prose-xl">
+                                    <h3>My Skills</h3>
                                     <p>
-                                        I learnt various skills in the past and I applied them in my projects.
+                                        I learnt various skills in the past and
+                                        I applied them in my projects.
                                     </p>
                                 </article>
                             </center>
-                            <div className="mt-4 grid grid-rows-4 gap-4">
-                                <div>
-                                    <progress
-                                        className="progress progress-primary w-56"
-                                        value="0"
-                                        max="100"
-                                    ></progress>
+                            <div className="mt-4 grid grid-cols-2 gap-4">
+                                <div className="grid grid-rows-4 gap-2">
+                                    <SkillItem name="Typescript" percentage={80} />
+                                    <SkillItem name="JavaScript" percentage={80} />
+                                    <SkillItem name="CSS" percentage={70} />
+                                    <SkillItem name="HTML" percentage={80} />
                                 </div>
-                                <progress
-                                    className="progress progress-primary w-56"
-                                    value="10"
-                                    max="100"
-                                ></progress>
-                                <progress
-                                    className="progress progress-primary w-56"
-                                    value="40"
-                                    max="100"
-                                ></progress>
-                                <progress
-                                    className="progress progress-primary w-56"
-                                    value="70"
-                                    max="100"
-                                ></progress>
-                                <progress
-                                    className="progress progress-primary w-56"
-                                    value="100"
-                                    max="100"
-                                ></progress>
+                                <div className="grid grid-rows-4 gap-2">
+                                    <SkillItem name="MySQL" percentage={60} />
+                                    <SkillItem name="Git" percentage={50} />
+                                    <SkillItem name="Cloud" percentage={30} />
+                                    <SkillItem name="CI/CD" percentage={20} />
+                                </div>
                             </div>
                         </div>
                     </div>
