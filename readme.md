@@ -1,5 +1,5 @@
 # [Jacky.Fan](https://jacky.fan) - My personal website
-You can access this website via (https://jacky.fan)[https://jacky.fan]
+You can access this website via https://jacky.fan
 
 ## Getting Started
 
