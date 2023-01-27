@@ -12,7 +12,7 @@ export default function HomePage() {
     return (
         <div className="w-[99vw] bg-base-100">
             <div className="grid h-[100vh] bg-base-100 w-80%">
-                {/* Row 1: About me */}
+                {/* About me */}
                 <header className="fixed w-full top-0 z-50">
                     <NavBar />
                 </header>
@@ -42,7 +42,7 @@ export default function HomePage() {
                 </div>
             </div>
 
-            {/* Desktop only */}
+            {/* Desktop only content */}
             <div className="hidden lg:flex justify-center h-auto bg-base-200 w-full">
                 <div className="w-full">
                     <center>
