@@ -6,7 +6,7 @@ export const NavBar = () => {
                     Jacky FAN's Website
                 </a>
             </div>
-            <div className="flex-none">
+            <div className="invisible md:visible flex-none">
                 <ul className="menu menu-horizontal px-1">
                     <li>
                         <a href="#intro">Intro</a>
