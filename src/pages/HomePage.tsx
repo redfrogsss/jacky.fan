@@ -5,8 +5,8 @@ import {
     EmailButton,
     LinkedInButton,
     GithubButton,
+    ProjectItems,
 } from "../components";
-import { ProjectItems } from "../components/ProjectItems";
 
 export default function HomePage() {
     return (

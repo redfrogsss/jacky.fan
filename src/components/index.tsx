@@ -6,4 +6,4 @@ import { LinkedInButton } from "./LinkedInButton";
 import { GithubButton } from "./GithubButton";
 import { ProjectItems } from "./ProjectItems"
 
-export { NavBar, PortfolioPhotos, SkillItem, EmailButton, LinkedInButton, GithubButton }
+export { NavBar, PortfolioPhotos, SkillItem, EmailButton, LinkedInButton, GithubButton, ProjectItems }
