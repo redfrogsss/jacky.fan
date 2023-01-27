@@ -40,11 +40,13 @@ export const ProjectItems = () => {
         return projects.map((project) => {
             return (
                 <a href={project.link} className="stat">
-                    <article className="prose lg:prose-xl">
-                        <h4>{project.title}</h4>
-                        <p>{project.description}</p>
-                        {createTags(project.tags)}
-                    </article>
+                    <center>
+                        <article className="prose lg:prose-xl">
+                            <h4>{project.title}</h4>
+                            <p>{project.description}</p>
+                            {createTags(project.tags)}
+                        </article>
+                    </center>
                 </a>
             );
         });

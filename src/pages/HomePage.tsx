@@ -43,12 +43,14 @@ export default function HomePage() {
             </div>
 
             {/* Desktop only */}
-            <div className="hidden lg:grid h-auto bg-base-200">
-                <div className="grid justify-items-center items-center justify-center h-auto">
+            <div className="hidden lg:flex justify-center h-auto bg-base-200 w-full">
+                <div className="w-full">
+                    <center>
+
                     {/*  My Projects */}
                     <div
                         id="projects"
-                        className="card w-[80%] h-auto bg-base-100 shadow-xl mt-16"
+                        className="block card w-[80%] h-auto bg-base-100 shadow-xl mt-16"
                     >
                         <div className="card-body">
                             <center>
@@ -104,6 +106,7 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
+                    </center>
                 </div>
             </div>
             {/* End of Desktop only content */}
