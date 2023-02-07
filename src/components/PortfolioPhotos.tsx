@@ -24,6 +24,7 @@ export const PortfolioPhotos = () => {
                                 <h2 className="card-title">
                                     <a
                                         href={item.link}
+                                        target="_blank"
                                         className="link link-hover"
                                     >
                                         {item.title}
