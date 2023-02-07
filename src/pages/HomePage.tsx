@@ -96,12 +96,12 @@ export default function HomePage() {
                                 </div>
                                 <div className="grid grid-rows-4 gap-2">
                                     <SkillItem
-                                        name="JavaScript"
+                                        name="ReactJS"
                                         percentage={80}
                                     />
                                     <SkillItem name="MySQL" percentage={60} />
                                     <SkillItem name="Git" percentage={50} />
-                                    <SkillItem name="CI/CD" percentage={30} />
+                                    <SkillItem name="Docker" percentage={40} />
                                 </div>
                             </div>
                         </div>
@@ -139,12 +139,12 @@ export default function HomePage() {
                     <div className="my-2">
                         <SkillItem name="Typescript" percentage={80} />
                         <SkillItem name="HTML" percentage={80} />
-                        <SkillItem name="JavaScript" percentage={80} />
+                        <SkillItem name="ReactJS" percentage={80} />
                         <SkillItem name="CSS" percentage={70} />
                         <SkillItem name="MySQL" percentage={60} />
                         <SkillItem name="Git" percentage={50} />
                         <SkillItem name="Cloud" percentage={40} />
-                        <SkillItem name="CI/CD" percentage={30} />
+                        <SkillItem name="Docker" percentage={40} />
                     </div>
                 </center>
             </div>
