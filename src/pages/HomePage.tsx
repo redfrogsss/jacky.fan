@@ -30,7 +30,7 @@ export default function HomePage() {
                             </i>
                             . I am a year 4 student studying Computing at The
                             Hong Kong Polytechnic University. I am passionate
-                            about `Programming`, `Web Technology` and `Problem
+                            about `Programming`, <br />`Web Technology` and `Problem
                             Solving`.
                         </p>
                         <div className="grid md:inline-block gap-2">
@@ -49,7 +49,7 @@ export default function HomePage() {
                         {/*  My Projects */}
                         <div
                             id="projects"
-                            className="block items-center justify-center w-[80%] min-h-[100vh] bg-base-200 mt-16"
+                            className="block items-center justify-center w-[80%] min-h-[100vh] bg-base-200 mt-32"
                         >
                             <article className="prose lg:prose-xl">
                                 <h3>My Projects</h3>
@@ -67,19 +67,17 @@ export default function HomePage() {
                         {/* My Skills */}
                         <div
                             id="skills"
-                            className="card w-[70%] h-auto bg-base-100 shadow-xl my-16"
+                            className="w-[70%] h-auto my-32"
                         >
-                            <div className="card-body">
-                                <center>
-                                    <article className="prose lg:prose-xl">
-                                        <h3>My Skills</h3>
-                                        <p>
-                                            I learnt various skills in the past and
-                                            I applied them in my projects.
-                                        </p>
-                                    </article>
-                                </center>
-                                <div className="mt-4 grid grid-cols-2 gap-4">
+                            <article className="prose lg:prose-xl">
+                                <h3>My Skills</h3>
+                                <p>
+                                    I learnt various skills in the past and
+                                    I applied them in my projects.
+                                </p>
+                            </article>
+                            <div className="card w-full bg-base-100 shadow-xl mt-4">
+                                <div className="card-body mt-4 grid grid-cols-2 gap-4">
                                     <div className="grid grid-rows-4 gap-2">
                                         <SkillItem
                                             name="Typescript"
