@@ -11,29 +11,29 @@ export const PortfolioPhotos = () => {
         return Projects.map((item, i) => {
             return (
                 <>
-                    <div className="carousel-item">
                         <div className="card w-96 bg-base-100 shadow-xl">
                             <figure>
-                                <img
-                                    src={item.image}
-                                    alt="Preview Images"
-                                    className="h-56 rounded-t-md"
-                                />
+                                <a href={item.link} target="_blank" title={item.title}>
+                                    <img
+                                        src={item.image}
+                                        alt="Preview Images"
+                                        className="w-full rounded-t-md"
+                                    />
+                                </a>
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title">
                                     <a
                                         href={item.link}
                                         target="_blank"
+                                        title={item.title}
                                         className="link link-hover"
                                     >
                                         {item.title}
                                     </a>
-                                    {/* {item.title} */}
-                                    {i === 0 ? (
+                                    {i <= 1 ? (
                                         <div className="badge badge-secondary">
-                                            {" "}
-                                            NEW{" "}
+                                            NEW
                                         </div>
                                     ) : (
                                         ""
@@ -45,7 +45,7 @@ export const PortfolioPhotos = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    {/* </div> */}
                 </>
             );
         });
@@ -53,8 +53,10 @@ export const PortfolioPhotos = () => {
 
     return (
         <>
-            <div className="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box w-full">
-                {createCarouselItem()}
+            <div className="glass bg-opacity-10 rounded-box w-fit min-h-auto shadow-xl">
+                <div className="grid grid-flow-row grid-cols-2 2xl:grid-cols-3 gap-4 2xl:gap-8 p-4 2xl:p-8">
+                    {createCarouselItem()}
+                </div>
             </div>
         </>
     );

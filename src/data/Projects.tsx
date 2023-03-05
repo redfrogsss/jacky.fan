@@ -1,9 +1,18 @@
 import SelfRemindPreview from "../../public/img/selfremind.png";
 import AttendancePreview from "../../public/img/attendance.png";
-import RedStreamPreview from "../../public/img/redstream.png";
-import GDSCPreview from "../../public/img/gdsc.png";
+import RedStreamPreview from "../../public/img/redstream2.png";
+import GDSCPreview from "../../public/img/gdsc2.png";
+import JackyFanPreview from "../../public/img/jackyfan.png";
 
 export const Projects = [
+    {
+        title: "Jacky.Fan",
+        description:
+            "A personal website built with Vite, React, Typescript, DaisyUI and TailwindCSS.",
+        tags: ["Personal Website", "Side Project"],
+        image: JackyFanPreview,
+        link: "https://github.com/redfrogsss/selfremind",
+    },
     {
         title: "SelfRemind",
         description:

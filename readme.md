@@ -5,6 +5,11 @@ You can access this website via https://jacky.fan
 # [Jacky.Fan](https://jacky.fan) - My personal website
 A personal website built with Vite, React, Typescript, DaisyUI and Tailwind CSS.
 
+## Features
+- Dark Mode Support
+- Responsive UI
+- etc.
+
 ## Screenshots
 ![Screenshot](./readme-img/01.png)
 ![Screenshot](./readme-img/02.png)
@@ -30,10 +35,10 @@ yarn dev
 
 This project uses the following tech:
 
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [DaisyUI](https://daisyui.com/)
-- [HeroIcon](https://heroicons.com/)
-- [Cloudflare Pages](https://pages.cloudflare.com/)
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org/) - A superset of JavaScript.
+- [Vite](https://vitejs.dev/) - Next generation frontend tooling. It's fast!
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [DaisyUI](https://daisyui.com/) - A simple, responsive and customizable UI components library for Tailwind CSS.
+- [HeroIcon](https://heroicons.com/) - Beautiful hand-crafted SVG icons.
+- [Cloudflare Pages](https://pages.cloudflare.com/) - A static site hosting service.
