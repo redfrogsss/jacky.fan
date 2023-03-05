@@ -13,25 +13,27 @@ export const PortfolioPhotos = () => {
                 <>
                         <div className="card w-96 bg-base-100 shadow-xl">
                             <figure>
-                                <img
-                                    src={item.image}
-                                    alt="Preview Images"
-                                    className="w-full rounded-t-md"
-                                />
+                                <a href={item.link} target="_blank" title={item.title}>
+                                    <img
+                                        src={item.image}
+                                        alt="Preview Images"
+                                        className="w-full rounded-t-md"
+                                    />
+                                </a>
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title">
                                     <a
                                         href={item.link}
                                         target="_blank"
+                                        title={item.title}
                                         className="link link-hover"
                                     >
                                         {item.title}
                                     </a>
                                     {i === 0 ? (
                                         <div className="badge badge-secondary">
-                                            {" "}
-                                            NEW{" "}
+                                            NEW
                                         </div>
                                     ) : (
                                         ""
