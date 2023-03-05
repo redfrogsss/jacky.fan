@@ -1,7 +1,7 @@
 import SelfRemindPreview from "../../public/img/selfremind.png";
 import AttendancePreview from "../../public/img/attendance.png";
-import RedStreamPreview from "../../public/img/redstream.png";
-import GDSCPreview from "../../public/img/gdsc.png";
+import RedStreamPreview from "../../public/img/redstream2.png";
+import GDSCPreview from "../../public/img/gdsc2.png";
 
 export const Projects = [
     {
