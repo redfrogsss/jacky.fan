@@ -31,7 +31,7 @@ export const PortfolioPhotos = () => {
                                     >
                                         {item.title}
                                     </a>
-                                    {i === 0 ? (
+                                    {i <= 1 ? (
                                         <div className="badge badge-secondary">
                                             NEW
                                         </div>
