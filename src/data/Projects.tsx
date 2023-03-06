@@ -11,7 +11,7 @@ export const Projects = [
             "A personal website built with Vite, React, Typescript, DaisyUI and TailwindCSS.",
         tags: ["Personal Website", "Side Project"],
         image: JackyFanPreview,
-        link: "https://github.com/redfrogsss/selfremind",
+        link: "https://github.com/redfrogsss/jacky.fan",
     },
     {
         title: "SelfRemind",
