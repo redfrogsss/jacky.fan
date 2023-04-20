@@ -1,12 +1,19 @@
-import "./App.css";
 import HomePage from "./pages/HomePage";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 function App() {
-    return (
-        <div className="App bg-slate-400">
-            <HomePage />
-        </div>
-    );
+
+    const router = createBrowserRouter([
+        {
+            path: "/",
+            element: <HomePage />,
+        },
+    ]);
+
+    return <RouterProvider router={router} />;
 }
 
 export default App;

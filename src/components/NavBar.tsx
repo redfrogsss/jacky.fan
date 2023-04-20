@@ -9,13 +9,13 @@ export const NavBar = () => {
             <div className="invisible md:visible flex-none">
                 <ul className="menu menu-horizontal px-1">
                     <li>
-                        <a href="#intro">Intro</a>
+                        <a href="/#intro">Intro</a>
                     </li>
                     <li>
-                        <a href="#projects">My Projects</a>
+                        <a href="/#projects">My Projects</a>
                     </li>
                     <li>
-                        <a href="#skills">My Skills</a>
+                        <a href="/#skills">My Skills</a>
                     </li>
                 </ul>
             </div>
