@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Projects} from "../data/Projects";
 
 export const ProjectItems = () => {
@@ -11,7 +12,7 @@ export const ProjectItems = () => {
     const createItems = () => {
         return Projects.map((project) => {
             return (
-                <a href={project.link} className="stat">
+                <Link to={project.link} className="stat">
                     <center>
                         <article className="prose lg:prose-xl">
                             <h4>{project.title}</h4>
@@ -19,7 +20,7 @@ export const ProjectItems = () => {
                             {createTags(project.tags)}
                         </article>
                     </center>
-                </a>
+                </Link>
             );
         });
     }

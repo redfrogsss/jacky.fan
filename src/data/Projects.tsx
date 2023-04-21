@@ -11,7 +11,7 @@ export const Projects = [
             "A personal website built with Vite, React, Typescript, DaisyUI and TailwindCSS.",
         tags: ["Personal Website", "Side Project"],
         image: JackyFanPreview,
-        link: "https://github.com/redfrogsss/jacky.fan",
+        link: "/projects/jackyfan",
     },
     {
         title: "SelfRemind",
@@ -19,7 +19,7 @@ export const Projects = [
             "A selfhosted To-do List Manager built with Next.js, Chakra-UI and MySQL.",
         tags: ["Todo App", "Side Project"],
         image: SelfRemindPreview,
-        link: "https://github.com/redfrogsss/selfremind",
+        link: "/projects/selfremind",
     },
     {
         title: "GDSC Portfolio",
@@ -27,7 +27,7 @@ export const Projects = [
             "A portfolio website created for the GDSC portfolio workshop.",
         tags: ["Web", "Workshop"],
         image: GDSCPreview,
-        link: "https://github.com/redfrogsss/gdsc-portfolio",
+        link: "/projects/gdsc",
     },
     {
         title: "RedStream",
@@ -35,7 +35,7 @@ export const Projects = [
             "A Movie Streaming Website built with ReactJS, MaterialUI, ExpressJS, Firebase and FFmpeg.",
         tags: ["Movie Streaming", "School Project"],
         image: RedStreamPreview,
-        link: "https://github.com/redfrogsss/RedStream",
+        link: "/projects/redstream",
     },
     {
         title: "Student Attendance System",
@@ -43,6 +43,6 @@ export const Projects = [
             "A Student Attendance Management System built with ExpressJS/Java, Bootstrap, JQuery and MySQL. ",
         tags: ["Web", "School Project"],
         image: AttendancePreview,
-        link: "https://github.com/redfrogsss/attendance-system-nodejs",
+        link: "/projects/sams",
     },
 ];
