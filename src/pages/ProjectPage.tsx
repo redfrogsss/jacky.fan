@@ -4,6 +4,7 @@ import {
 } from "../components";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm';
+import ScrollToTop from "../components/ScrollToTop";
 
 interface ProjectPageProps {
     project: {
@@ -51,31 +52,18 @@ export default function ProjectPage({project} : ProjectPageProps) {
     })
 
     return (
-        <div className="App bg-slate-400">
-            <div className="w-[100vw] bg-base-100">
-                <header className="fixed w-full top-0 z-50">
-                    <NavBar />
-                </header>
+        <>
+            <ScrollToTop />
+            <div className="App bg-slate-400">
+                <div className="w-[100vw] bg-base-100">
+                    <header className="fixed w-full top-0 z-50">
+                        <NavBar />
+                    </header>
 
-                {/* Mobile only */}
-                <div className="lg:hidden min-h-[92vh] bg-base-200 p-4">
-                    <article className="prose lg:prose-xl w-[90%] m-auto md:w-full mt-16">
-                        <h2>{project.title}</h2>
-                        <DateColumn date={project.date}/>
-                        { showAllLinkButtons() }
-                        <p>
-                            <ReactMarkdown children={project.description} remarkPlugins={[remarkGfm]} />
-                        </p>
-                    </article>
-                </div>
-                {/* End of mobile only content*/}
-
-
-                {/* Desktop only content */}
-                <div className="hidden lg:flex justify-center h-auto bg-base-200 w-full">
-                    <div className="flex items-center justify-center w-[80%] min-h-[92vh] bg-base-200">
-                        <article className="prose lg:prose-xl my-32">
-                            <h3>{project.title}</h3>
+                    {/* Mobile only */}
+                    <div className="lg:hidden min-h-[92vh] bg-base-200 p-4">
+                        <article className="prose lg:prose-xl w-[90%] m-auto md:w-full mt-16">
+                            <h2>{project.title}</h2>
                             <DateColumn date={project.date} />
                             {showAllLinkButtons()}
                             <p>
@@ -83,29 +71,46 @@ export default function ProjectPage({project} : ProjectPageProps) {
                             </p>
                         </article>
                     </div>
-                </div>
-                {/* End of Desktop only content */}
+                    {/* End of mobile only content*/}
 
-                <footer className="footer footer-center p-4 bg-base-200 lg:bg-base-100 text-base-content">
-                    <div>
-                        <article className="prose lg:prose-xl">
-                            <small>
-                                Jacky FAN @{" "}
-                                <a href="https://jacky.fan">jacky.fan</a>{" "}
-                                {new Date().getFullYear()}. Source code available at{" "}
-                                <a
-                                    rel="noopener"
-                                    href="https://github.com/redfrogsss/jacky.fan"
-                                    target="_blank"
-                                >
-                                    GitHub
-                                </a>
-                                .
-                            </small>
-                        </article>
+
+                    {/* Desktop only content */}
+                    <div className="hidden lg:flex justify-center h-auto bg-base-200 w-full">
+                        <div className="flex items-center justify-center w-[80%] min-h-[92vh] bg-base-200">
+                            <article className="prose lg:prose-xl my-32">
+                                <h3>{project.title}</h3>
+                                <DateColumn date={project.date} />
+                                {showAllLinkButtons()}
+                                <p>
+                                    <ReactMarkdown children={project.description} remarkPlugins={[remarkGfm]} />
+                                </p>
+                            </article>
+                        </div>
                     </div>
-                </footer>
+                    {/* End of Desktop only content */}
+
+                    <footer className="footer footer-center p-4 bg-base-200 lg:bg-base-100 text-base-content">
+                        <div>
+                            <article className="prose lg:prose-xl">
+                                <small>
+                                    Jacky FAN @{" "}
+                                    <a href="https://jacky.fan">jacky.fan</a>{" "}
+                                    {new Date().getFullYear()}. Source code available at{" "}
+                                    <a
+                                        rel="noopener"
+                                        href="https://github.com/redfrogsss/jacky.fan"
+                                        target="_blank"
+                                    >
+                                        GitHub
+                                    </a>
+                                    .
+                                </small>
+                            </article>
+                        </div>
+                    </footer>
+                </div>
             </div>
-        </div>
+        </>
+        
     );
 }
