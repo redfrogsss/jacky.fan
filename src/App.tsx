@@ -4,7 +4,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ProjectPage from "./pages/ProjectPage";
-import SASProjectPage from "./pages/SASProjectPage";
+import ProjectDetail from "./data/ProjectDetails";
 
 function App() {
 
@@ -14,28 +14,24 @@ function App() {
             element: <HomePage />,
         },
         {
-            path: "/projects",
-            element: <ProjectPage />,
+            path: "/projects/sams",
+            element: <ProjectPage project={ProjectDetail.sams}/>,
         },
         {
-            path: "/projects/sas",
-            element: <SASProjectPage />,
+            path: "/projects/redstream",
+            element: <ProjectPage project={ProjectDetail.redstream}/>,
         },
         {
-            path: "/projects",
-            element: <ProjectPage />,
+            path: "/projects/gdsc",
+            element: <ProjectPage project={ProjectDetail.gdscPortfolio}/>,
         },
         {
-            path: "/projects",
-            element: <ProjectPage />,
+            path: "/projects/selfremind",
+            element: <ProjectPage project={ProjectDetail.selfremind}/>,
         },
         {
-            path: "/projects",
-            element: <ProjectPage />,
-        },
-        {
-            path: "/projects",
-            element: <ProjectPage />,
+            path: "/projects/jackyfan",
+            element: <ProjectPage project={ProjectDetail.jackyfan}/>,
         },
     ]);
 
