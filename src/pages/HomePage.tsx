@@ -11,7 +11,7 @@ import {
 
 export default function HomePage() {
     return (
-        <div className="App bg-slate-400">
+        <div className="App bg-slate-400 text-center">
             <div className="w-[99vw] bg-base-100">
                 <div className="grid min-h-[100vh] bg-base-100 w-80%">
                     {/* About me */}
