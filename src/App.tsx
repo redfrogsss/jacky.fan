@@ -33,6 +33,10 @@ function App() {
             path: "/projects/jackyfan",
             element: <ProjectPage project={ProjectDetail.jackyfan}/>,
         },
+        {
+            path: "/projects/crsweb",
+            element: <ProjectPage project={ProjectDetail.crs}/>,
+        },
     ]);
 
     return <RouterProvider router={router} />;

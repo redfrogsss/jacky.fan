@@ -3,8 +3,17 @@ import AttendancePreview from "../../public/img/attendance.png";
 import RedStreamPreview from "../../public/img/redstream2.png";
 import GDSCPreview from "../../public/img/gdsc2.png";
 import JackyFanPreview from "../../public/img/jackyfan.png";
+import CRSWebPreview from "../../public/img/crsweb.png";
 
 export const Projects = [
+    {
+        title: "CRS Web",
+        description:
+            "Web-based Conversational Recommender System built with ReactJS, Python Flask, MySQL and CRSLab.",
+            tags: ["Web", "Final Year Project"],
+            image: CRSWebPreview,
+            link: "/projects/crsweb",
+    },
     {
         title: "Jacky.Fan",
         description:
