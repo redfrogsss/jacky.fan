@@ -278,6 +278,102 @@ This project uses the following tech:
 - [Cloudflare Pages](https://pages.cloudflare.com/) - A static site hosting service.
         `
     },
+    crs: {
+        title: "CRS Web",
+        date: "July 2022 ~ April 2023",
+        links: [{
+          title: "GitHub",
+          link: "https://github.com/redfrogsss/CRS"
+        }],
+        description: `
+**CRS Web** is a web-based conversational recommender system that allows AI recommender to recommend movies in a short conversation based on user's preference.
+
+![Demo GIF](/img/project_img/crs/demo.gif)
+
+## Features
+This project aims to provide a easy-to-use interface for users to access the conversational recommender and ask for movie recommendaation. 
+
+The features included in this projects are:
+
+- AI-based conversational recommender for movie recommendation
+- Multilingual support for English and Chinese languages
+- Movie poster display based on movie keywords
+- Simple user login and registration functionality
+- Creation of new conversations and viewing of past conversations.
+
+To support certain features, this project uses a modified version of CRSLab to perform tasks and communicate with the web application.
+
+## Screenshots
+
+- Login Page
+![Login Page](/img/project_img/crs/login-page.png)
+
+- Register Page
+![Register Page](/img/project_img/crs/register-page.png)
+
+- Conversation Page
+![Conversation Page](/img/project_img/crs/conversation-page.png)
+
+- Conversation Page with English conversation example
+![Conversation Page with English conversation example](/img/project_img/crs/conversation-english-1.png)
+![Conversation Page with English conversation example](/img/project_img/crs/conversation-english-2.png)
+
+- Conversation Page with Chinese conversation example
+![Conversation Page with Chinese conversation example](/img/project_img/crs/conversation-chinese-1.png)
+![Conversation Page with Chinese conversation example](/img/project_img/crs/conversation-chinese-2.png)
+![Conversation Page with Chinese conversation example](/img/project_img/crs/conversation-chinese-3.png)
+
+## Setup
+
+To setup this project, you need to install the following prerequisite software:
+
+- Docker
+- Docker Compose
+- Python
+- PIP
+- NodeJS
+- Yarn
+- Anaconda
+
+Then, follow the following steps to setup the project:
+
+1. Clone this repo
+~~~bash
+git clone --recursive https://github.com/redfrogsss/CRS
+~~~
+
+2. To run the fronend, start a new terminal and run the following commands:
+~~~bash
+cd frontend && yarn && yarn start
+~~~
+
+3. To run the backend, start a new terminal and run the following commands:
+~~~bash
+cd backend && pipenv install && pipenv run python app.py
+~~~
+
+4. To run the MySQL database, start a new terminal and run the following commands:
+~~~bash
+cd mysql && docker-compose up
+~~~
+
+5. To run the conversational recommender module, follow [CRSLab's readme instruction](https://github.com/redfrogsss/CRSLab) inside the \`CRSLab\` folder.
+
+## Learn More
+This project was built by [Jacky FAN](https://jacky.fan) for the Final Year Project of the Bachelor's Degree in Computing at The Hong Kong Polytechnic University during 2022 and 2023.
+
+The following tech is used in this project: 
+- [ReactJS](https://react.dev/) - Frontend framework of this project
+- [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework for styling
+- [Flowbite](https://flowbite.com/) - UI components library based on TailwindCSS
+- [Python Flask](https://flask.palletsprojects.com/en/2.3.x/) - Backend framework of this project
+- [MySQL](https://www.mysql.com/) - Database of this project
+- [Docker](https://www.docker.com/) - Container platform for running MySQL
+- [CRSLab](https://github.com/RUCAIBox/CRSLab) - Open-source toolkit for building Conversational Recommender System
+- [Google Search API](https://developers.google.com/custom-search/) - Google Search for searching movie poster
+
+        `
+    }
 }
 
 export default ProjectDetail;
