@@ -9,8 +9,8 @@ export const Projects = [
     {
         title: "CRS Web",
         description:
-            "Web-based Conversational Recommender System built with ReactJS, Python Flask, MySQL and CRSLab.",
-            tags: ["Web", "Final Year Project"],
+            "Web-based AI Conversational Recommender System built with React, Python Flask, MySQL and CRSLab.",
+            tags: ["Web", "AI", "Final Year Project"],
             image: CRSWebPreview,
             link: "/projects/crsweb",
     },
