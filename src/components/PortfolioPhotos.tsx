@@ -23,7 +23,7 @@ export const PortfolioPhotos = () => {
                             </Link>
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title">
+                            <h2 className="card-title justify-center">
                                 <Link
                                     to={item.link}
                                     title={item.title}
