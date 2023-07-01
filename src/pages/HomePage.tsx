@@ -11,9 +11,9 @@ import {
 
 export default function HomePage() {
     return (
-        <div className="App bg-slate-400 text-center">
-            <div className="w-[99vw] bg-base-100">
-                <div className="grid min-h-[100vh] bg-base-100 w-80%">
+        <div className="bg-slate-400 text-center w-screen">
+            <div className="w-full bg-base-100">
+                <div className="grid min-h-screen bg-base-100 w-80%">
                     {/* About me */}
                     <header className="fixed w-full top-0 z-50">
                         <NavBar />
