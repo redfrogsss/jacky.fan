@@ -24,16 +24,10 @@ export default function HomePage() {
                     >
                         <article className="prose lg:prose-xl w-[80%] md:w-full">
                             <h1>Jacky FAN</h1>
-                            <h4>A Computing Student at PolyU</h4>
+                            {/* <h4>A Computing Student at PolyU</h4> */}
                             <p>
-                                Hello, my name is{" "}
-                                <i>
-                                    <b>Jacky FAN</b>
-                                </i>
-                                . I am a year 4 student studying Computing at The
-                                Hong Kong Polytechnic University. I am passionate
-                                about `Programming`, <br />`Web Technology` and `Problem
-                                Solving`.
+                                Hello, my name is{" "} <i> <b>Jacky FAN</b> </i> . <br />
+                                I am passionate about `Programming`, `Web Technology` and `Problem Solving`.
                             </p>
                             <div className="grid md:inline-block gap-2">
                                 <EmailButton />
