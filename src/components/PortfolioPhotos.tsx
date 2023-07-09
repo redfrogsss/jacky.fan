@@ -12,7 +12,7 @@ export const PortfolioPhotos = () => {
         return Projects.map((item, i) => {
             return (
                 <>
-                    <div className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card max-w-96 w-auto bg-base-100 shadow-xl">
                         <figure>
                             <Link to={item.link} title={item.title}>
                                 <img
@@ -53,7 +53,7 @@ export const PortfolioPhotos = () => {
     return (
         <>
             <div className="glass bg-opacity-10 rounded-box w-fit min-h-auto shadow-xl">
-                <div className="grid grid-flow-row grid-cols-2 2xl:grid-cols-3 gap-4 2xl:gap-8 p-4 2xl:p-8">
+                <div className="grid grid-flow-row grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8 p-4 xl:p-8">
                     {createCarouselItem()}
                 </div>
             </div>
