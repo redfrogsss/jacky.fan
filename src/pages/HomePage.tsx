@@ -8,6 +8,7 @@ import {
     GithubButton,
     ProjectItems,
 } from "../components";
+import { BlogButton } from "../components/BlogButton";
 
 export default function HomePage() {
     return (
@@ -31,6 +32,7 @@ export default function HomePage() {
                             </p>
                             <div className="grid md:inline-block gap-2">
                                 <EmailButton />
+                                <BlogButton />
                                 <LinkedInButton />
                                 <GithubButton />
                             </div>

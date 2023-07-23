@@ -1,4 +1,4 @@
-export const GithubButton = () => {
+export const BlogButton = () => {
     const Icon = () => {
         return (
             <svg
@@ -20,12 +20,12 @@ export const GithubButton = () => {
 
     return (
         <a
-            className="btn gap-2 mr-2"
-            href="https://github.com/redfrogsss"
+            className="btn btn-secondary gap-2 mr-2"
+            href="https://blog.jacky.fan"
             target="_blank"
         >
             <Icon />
-            GitHub
+            Blog
         </a>
     );
 };
