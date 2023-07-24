@@ -8,6 +8,7 @@ import {
     GithubButton,
     ProjectItems,
 } from "../components";
+import { BlogButton } from "../components/BlogButton";
 
 export default function HomePage() {
     return (
@@ -26,11 +27,13 @@ export default function HomePage() {
                             <h1>Jacky FAN</h1>
                             {/* <h4>A Computing Student at PolyU</h4> */}
                             <p>
-                                Hello, my name is{" "} <i> <b>Jacky FAN</b> </i> . <br />
-                                I am passionate about `Programming`, `Web Technology` and `Problem Solving`.
+                                Hello, I am a {" "} <i> <b>Frontend Developer</b></i>. <br />
+                                I write code and eat computer bugs. <br />
+                                I am also passionate about `Programming`, `Web Technology` and `Problem Solving`.
                             </p>
                             <div className="grid md:inline-block gap-2">
                                 <EmailButton />
+                                <BlogButton />
                                 <LinkedInButton />
                                 <GithubButton />
                             </div>
