@@ -25,11 +25,10 @@ export default function HomePage() {
                     >
                         <article className="prose lg:prose-xl w-[80%] md:w-full">
                             <h1>Jacky FAN</h1>
-                            {/* <h4>A Computing Student at PolyU</h4> */}
+                            <h4>Frontend Developer</h4>
                             <p>
-                                Hello, I am a {" "} <i> <b>Frontend Developer</b></i>. <br />
                                 I write code and eat computer bugs. <br />
-                                I am also passionate about `Programming`, `Web Technology` and `Problem Solving`.
+                                I am passionate about `Programming`, `Web Technology` and `Problem Solving`.
                             </p>
                             <div className="grid md:inline-block gap-2">
                                 <EmailButton />
