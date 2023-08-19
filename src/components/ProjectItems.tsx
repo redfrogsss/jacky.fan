@@ -26,7 +26,7 @@ export const ProjectItems = () => {
     }
 
     return (
-        <div className="stats stats-vertical shadow w-full my-4">
+        <div className="stats stats-vertical shadow w-full my-4 mb-8">
             {createItems()}
         </div>
     );

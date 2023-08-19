@@ -20,7 +20,7 @@ export const EmailButton = () => {
 
     return (
         <a
-            className="btn btn-accent gap-2 mr-2"
+            className="btn btn-accent gap-2"
             href="mailto:contact@jacky.fan"
         >
             <Icon />

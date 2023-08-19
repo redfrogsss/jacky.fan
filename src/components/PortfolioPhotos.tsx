@@ -52,7 +52,7 @@ export const PortfolioPhotos = () => {
 
     return (
         <>
-            <div className="glass bg-opacity-10 rounded-box w-fit min-h-auto shadow-xl">
+            <div className="glass bg-opacity-10 rounded-box w-full min-h-auto shadow-xl">
                 <div className="grid grid-flow-row grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8 p-4 xl:p-8">
                     {createCarouselItem()}
                 </div>

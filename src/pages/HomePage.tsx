@@ -14,7 +14,7 @@ export default function HomePage() {
     return (
         <div className="bg-slate-400 text-center w-screen">
             <div className="w-full bg-base-100">
-                <div className="grid min-h-screen bg-base-100 w-80%">
+                <div className="grid min-h-screen bg-base-100">
                     {/* About me */}
                     <header className="fixed w-full top-0 z-50">
                         <NavBar />
@@ -23,14 +23,14 @@ export default function HomePage() {
                         id="intro"
                         className="flex items-center justify-center h-screen shadow-md"
                     >
-                        <article className="prose lg:prose-xl w-[80%] md:w-full">
+                        <article className="prose lg:prose-xl md:container mx-auto">
                             <h1>Jacky FAN</h1>
                             <h4>Frontend Developer</h4>
                             <p>
                                 I write code and eat computer bugs. <br />
-                                I am passionate about `Programming`, `Web Technology` and `Problem Solving`.
+                                {/* I am passionate about `Programming`, `Web Technology` and `Problem Solving`. */}
                             </p>
-                            <div className="grid md:inline-block gap-2">
+                            <div className="flex flex-col md:flex-row gap-2 w-full md:w-fit mx-0 md:mx-auto">
                                 <EmailButton />
                                 <BlogButton />
                                 <LinkedInButton />
@@ -41,71 +41,67 @@ export default function HomePage() {
                 </div>
 
                 {/* Desktop only content */}
-                <div className="hidden lg:flex justify-center h-auto bg-base-200 w-full">
-                    <div className="w-full">
-                        <center>
-                            {/*  My Projects */}
-                            <div
-                                id="projects"
-                                className="block items-center justify-center w-[80%] min-h-[100vh] bg-base-200 mt-32"
-                            >
-                                <article className="prose lg:prose-xl">
-                                    <h3>My Projects</h3>
-                                    <p>
-                                        In the past, I have done various
-                                        projects for school and hobbies. Most of
-                                        them are related to Web.
-                                    </p>
-                                </article>
-                                <div className="mt-4">
-                                    <PortfolioPhotos />
-                                </div>
-                            </div>
+                <div className="hidden lg:flex flex-col justify-center h-auto bg-base-200 w-full relative">
+                    {/*  My Projects */}
+                    <div
+                        id="projects"
+                        className="items-center justify-center min-h-[100vh] bg-base-200 mt-32 container mx-auto"
+                    >
+                        <article className="prose lg:prose-xl mx-auto mb-10">
+                            <h3>My Projects</h3>
+                            <p>
+                                In the past, I have done various
+                                projects for school and hobbies. Most of
+                                them are related to Web.
+                            </p>
+                        </article>
+                        <div className="mt-4">
+                            <PortfolioPhotos />
+                        </div>
+                    </div>
 
-                            {/* My Skills */}
-                            <div
-                                id="skills"
-                                className="w-[70%] h-auto my-32"
-                            >
-                                <article className="prose lg:prose-xl">
-                                    <h3>My Skills</h3>
-                                    <p>
-                                        I learnt various skills in the past and
-                                        I applied them in my projects.
-                                    </p>
-                                </article>
-                                <div className="card w-full bg-base-100 shadow-xl mt-4">
-                                    <div className="card-body mt-4 grid grid-cols-2 gap-4">
-                                        <div className="grid grid-rows-4 gap-2">
-                                            <SkillItem
-                                                name="Typescript"
-                                                percentage={80}
-                                            />
-                                            <SkillItem name="HTML" percentage={80} />
-                                            <SkillItem name="CSS" percentage={70} />
-                                            <SkillItem name="Cloud" percentage={40} />
-                                        </div>
-                                        <div className="grid grid-rows-4 gap-2">
-                                            <SkillItem
-                                                name="ReactJS"
-                                                percentage={80}
-                                            />
-                                            <SkillItem name="MySQL" percentage={60} />
-                                            <SkillItem name="Git" percentage={50} />
-                                            <SkillItem name="Docker" percentage={40} />
-                                        </div>
-                                    </div>
+                    {/* My Skills */}
+                    <div
+                        id="skills"
+                        className="h-auto my-32 container mx-auto"
+                    >
+                        <article className="prose lg:prose-xl mx-auto mb-10">
+                            <h3>My Skills</h3>
+                            <p>
+                                I learnt various skills in the past and
+                                I applied them in my projects.
+                            </p>
+                        </article>
+                        <div className="card w-full bg-base-100 shadow-xl mt-4">
+                            <div className="card-body mt-4 grid grid-cols-2 gap-4">
+                                <div className="grid grid-rows-4 gap-2">
+                                    <SkillItem
+                                        name="Typescript"
+                                        percentage={80}
+                                    />
+                                    <SkillItem name="HTML" percentage={80} />
+                                    <SkillItem name="CSS" percentage={70} />
+                                    <SkillItem name="Cloud" percentage={40} />
+                                </div>
+                                <div className="grid grid-rows-4 gap-2">
+                                    <SkillItem
+                                        name="ReactJS"
+                                        percentage={80}
+                                    />
+                                    <SkillItem name="MySQL" percentage={60} />
+                                    <SkillItem name="Git" percentage={50} />
+                                    <SkillItem name="Docker" percentage={40} />
                                 </div>
                             </div>
-                        </center>
+                        </div>
                     </div>
                 </div>
                 {/* End of Desktop only content */}
 
                 {/* Mobile only */}
-                <div className="lg:hidden h-auto bg-base-200 p-4">
-                    <center>
-                        <article className="prose lg:prose-xl w-[80%] md:w-full">
+                <div className="lg:hidden h-auto bg-base-200 p-4 w-full">
+                    <div className="container mx-auto">
+                        <article className="prose lg:prose-xl mt-8 mb-4 mx-auto">
                             <h3>My Projects</h3>
                             <p>
                                 In the past, I have done various projects for school
@@ -113,21 +109,20 @@ export default function HomePage() {
                                 Most of them are related to Web.
                             </p>
                         </article>
-                    </center>
-
-                    <ProjectItems />
+                        <ProjectItems />
+                    </div>
                 </div>
 
                 <div className="lg:hidden h-auto bg-base-100 p-4">
-                    <center>
-                        <article className="prose lg:prose-xl w-[80%] md:w-full">
+                    <div className="container mx-auto">
+                    <article className="prose lg:prose-xl mx-auto">
                             <h3>My Skills</h3>
                             <p>
                                 I learnt various skills in the past and I applied
                                 them in my projects.
                             </p>
                         </article>
-                        <div className="my-2">
+                        <div className="my-4">
                             <SkillItem name="Typescript" percentage={80} />
                             <SkillItem name="HTML" percentage={80} />
                             <SkillItem name="ReactJS" percentage={80} />
@@ -137,7 +132,7 @@ export default function HomePage() {
                             <SkillItem name="Cloud" percentage={40} />
                             <SkillItem name="Docker" percentage={40} />
                         </div>
-                    </center>
+                    </div>
                 </div>
 
                 {/* End of mobile only content*/}

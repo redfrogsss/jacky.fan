@@ -20,7 +20,7 @@ export const LinkedInButton = () => {
 
     return (
         <a
-            className="btn btn-primary gap-2 mr-2"
+            className="btn btn-primary gap-2"
             href="https://www.linkedin.com/in/jacky-fan-682516190/"
             target="_blank"
         >

@@ -20,7 +20,7 @@ export const BlogButton = () => {
 
     return (
         <a
-            className="btn btn-secondary gap-2 mr-2"
+            className="btn btn-secondary gap-2"
             href="https://blog.jacky.fan"
             target="_blank"
         >

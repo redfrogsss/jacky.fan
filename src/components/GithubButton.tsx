@@ -20,7 +20,7 @@ export const GithubButton = () => {
 
     return (
         <a
-            className="btn gap-2 mr-2"
+            className="btn gap-2"
             href="https://github.com/redfrogsss"
             target="_blank"
         >
